@@ -20,9 +20,9 @@
     "somedevfile.txt"
   ],
   "dependencies": {
+    "jquery": "1.x"
   },
   "devDependencies": {
-    "jquery": "1.x",
     "henka": "x.x.x"
   }
 }
