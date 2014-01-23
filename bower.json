@@ -18,5 +18,11 @@
     "test",
     "tests",
     "somedevfile.txt"
+  ],
+  "dependencies": [
+    "jquery"
+  ],
+  "devDependencies": [
+    "henka"
   ]
 }
