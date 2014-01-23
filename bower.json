@@ -1,0 +1,21 @@
+{
+  "name": "sdf",
+  "version": "0.0.3",
+  "homepage": "https://github.com/cobbdb/iron",
+  "authors": [
+    "Dan <cobbdb@gmail.com>"
+  ],
+  "description": "dflkklj",
+  "main": "nothing",
+  "keywords": [
+    "sdf"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
