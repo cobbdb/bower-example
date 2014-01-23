@@ -19,10 +19,10 @@
     "tests",
     "somedevfile.txt"
   ],
-  "dependencies": [
-    "jquery"
-  ],
-  "devDependencies": [
-    "henka"
-  ]
+  "dependencies": {
+    "jquery": "x.x.x"
+  },
+  "devDependencies": {
+    "henka": "x.x.x"
+  }
 }
