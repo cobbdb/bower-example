@@ -1,28 +1,20 @@
 {
-  "name": "iron-core",
-  "version": "0.0.1",
-  "description": "Mobile-friendly HTML5 game engine.",
-  "homepage": "https://github.com/cobbdb/iron",
-  "main": "build/iron.min.js",
+  "name": "bower-example",
+  "description": "Bare bones example of a Bower setup.",
   "scripts": {
-    "test": "grunt test"
+    "start": "grunt validate",
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/cobbdb/iron.git"
+    "url": "git://github.com/cobbdb/bower-example.git"
   },
   "author": "Dan Cobb",
-  "license": "MIT",
-  "readmeFilename": "readme.md",
-  "dependencies": {},
+  "dependencies": {
+    "bower": "x"
+  },
   "devDependencies": {
     "grunt": "0.x",
-    "grunt-contrib-jshint": "0.x",
-    "grunt-cli": "0.x",
-    "grunt-contrib-watch": "0.x",
-    "grunt-browserify": "1.x",
-    "grunt-contrib-uglify": "0.x",
-    "grunt-karma": "0.x",
-    "karma": "0.10.2"
+    "grunt-cli": "0.x"
   }
 }

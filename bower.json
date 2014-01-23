@@ -1,28 +1,15 @@
 {
-  "name": "sdf",
-  "version": "0.0.3",
-  "homepage": "https://github.com/cobbdb/iron",
-  "authors": [
-    "Dan <cobbdb@gmail.com>"
-  ],
-  "description": "dflkklj",
-  "main": "nothing",
-  "keywords": [
-    "sdf"
-  ],
-  "license": "MIT",
+  "name": "bower-example",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests",
-    "somedevfile.txt"
+    "tests"
   ],
   "dependencies": {
-    "jquery": "1.x"
+    "jquery": "1.7.x"
   },
   "devDependencies": {
-    "henka": "x.x.x"
   }
 }

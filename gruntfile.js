@@ -1,55 +1,13 @@
+var fs = require('fs');
+
 module.exports = function (grunt) {
-    grunt.initConfig({
-        jshint: {
-            options: {
-                curly: true,
-                eqeqeq: false,
-                indent: 4,
-                noarg: true,
-                nonew: false,
-                plusplus: true,
-                quotmark: false,
-                trailing: true
-            },
-            default: {
-                src: ['source/*.js']
-            }
-        },
-        watch: {
-            scripts: {
-                files: ['source/*.js'],
-                tasks: ['deploy']
-            }
-        },
-        requirejs: {
-            compile: {
-                options: {
-                    baseUrl: 'source',
-                    paths: {
-                        jquery: '//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min',
-                        underscore: '//underscorejs.org/underscore-min'
-                    },
-                    out: 'build',
-                    optimize: 'uglify2',
-                    uglify2: {
-                        mangle: {
-                            except: [
-                                '_',
-                                '$'
-                            ]
-                        }
-                    }
-                }
-            }
+    grunt.registerTask('validate', 'Ensure jquery is present.', function () {
+        if (fs.existsSync('components/jquery/jquery.min.js')) {
+            grunt.log.ok('jQuery found.');
+        } else {
+            var msg = 'jQuery is missing!';
+            grunt.log.error(msg);
+            throw Error(msg);
         }
     });
-
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-requirejs');
-
-    grunt.registerTask('deploy', [
-        'jshint',
-        'requirejs'
-    ]);
 };
